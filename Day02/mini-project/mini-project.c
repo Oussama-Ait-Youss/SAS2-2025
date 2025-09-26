@@ -141,7 +141,7 @@ int main()
             int book_finding = 0;
             printf("Enter the Title of the Book you want search for:");
             scanf(" %[^\n]", &user_titre_input);
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < number_of_books_added; i++)
             {
                 /* code */
                 if (strcmp(Titre[i], user_titre_input) == 0)
@@ -168,7 +168,7 @@ int main()
         {
             printf("Enter the Title of the Book you want search for:");
             scanf(" %[^\n]", &update_input);
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < number_of_books_added; i++)
             {
                 /* code */
                 if (strcmp(Titre[i], update_input) == 0)
@@ -197,13 +197,13 @@ int main()
         {
             printf("Enter the Title of the Book you want Delete :");
             scanf(" %[^\n]", &update_input);
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < number_of_books_added; i++)
             {
                 /* code */ int j;
                 if (strcmp(Titre[i], update_input) == 0)
                 {
                     /* code */
-                    for (j = 0; j < 100; j++)
+                    for (j = 0; j < number_of_books_added; j++)
                     {
                         /* code */
                         // Titre[i][j] = '\0';
